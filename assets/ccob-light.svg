@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 216" fill="none" role="img" aria-label="ccob">
+  <style>
+    .ink { stroke: #1f2328; stroke-width: 4; stroke-linecap: round; animation: draw 1.2s cubic-bezier(.6, 0, .2, 1) both; }
+    .seal { fill: #d9381e; animation: appear .6s ease-out 1.5s both; }
+    .pulse { stroke: #d9381e; stroke-width: 1.5; }
+    @keyframes draw {
+      from { stroke-dasharray: 1 1.2; stroke-dashoffset: 1.1; }
+      to { stroke-dasharray: 1 1.2; stroke-dashoffset: 0; }
+    }
+    @keyframes appear { from { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .ink, .seal { animation: none; }
+      .pulse { display: none; }
+    }
+  </style>
+  <!-- c -->
+  <path class="ink" pathLength="1" d="M320.64 102.29A40 40 0 1 0 320.64 153.71"/>
+  <!-- c -->
+  <path class="ink" pathLength="1" style="animation-delay: .12s" d="M415.64 102.29A40 40 0 1 0 415.64 153.71"/>
+  <!-- o -->
+  <path class="ink" pathLength="1" style="animation-delay: .24s" d="M480 88a40 40 0 1 0 0 80a40 40 0 1 0 0 -80"/>
+  <!-- b -->
+  <path class="ink" pathLength="1" style="animation-delay: .36s" d="M550 34V168"/>
+  <path class="ink" pathLength="1" style="animation-delay: .48s" d="M550 128a40 40 0 1 1 80 0a40 40 0 1 1 -80 0"/>
+  <!-- the dot inside the o, and the ring it sends out -->
+  <circle class="pulse" cx="480" cy="128" r="6" opacity="0">
+    <animate attributeName="r" values="6;38" dur="4.8s" begin="2.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".2 .6 .3 1"/>
+    <animate attributeName="opacity" values="0;.7;0;0" keyTimes="0;.08;.7;1" dur="4.8s" begin="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle class="seal" cx="480" cy="128" r="6"/>
+</svg>
