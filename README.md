@@ -29,9 +29,3 @@ A native PHP coroutine engine for high-concurrency network and data workloads.
 
 <a href="https://github.com/ccobcode/agent-context-map"><img src="assets/icons/agent-context-map.svg" width="28" height="28" align="absmiddle" alt="Agent Context Map"></a>&nbsp;&nbsp;<a href="https://github.com/ccobcode/agent-context-map"><b>Agent Context Map</b></a><br>
 A reference for how agent tools discover, scope and prioritize instructions, skills and plugins.
-
-<br>
-
-<div align="center">
-  <img src="assets/seal.svg" width="20" height="20" alt="">
-</div>
